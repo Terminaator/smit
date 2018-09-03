@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style type="text/css">
+        .login-form {
+            width: 340px;
+            margin: 50px auto;
+        }
+        .login-form form {
+            margin-bottom: 15px;
+            background: #f7f7f7;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+        .login-form h2 {
+            margin: 0 0 15px;
+        }
+        .form-control, .btn {
+            min-height: 38px;
+            border-radius: 2px;
+        }
+        .btn {
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="addPerson">
+        <form id="addForm">
+        <div id="personsTable">
+            <table id="persons" class="table">
+                <thead>
+                <tr>
+                    <th>Secret name</th>
+                    <th>Real name</th>
+                    <th>Phone number</th>
+                    <th><button id="logout" type="button">logout</button></th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="secretname" id="sname">
+                    </td>
+                    <td>
+                        <input type="text" name="realname" id="rname">
+                    </td>
+                    <td>
+                        <input type="text" name="phonenumber" id="phone">
+                    </td>
+                    <td>
+                        <button type="submit" id="sub">add</button>
+                    </td>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        </form>
+    </div>
+
+    <div id="login" class="login-form">
+        <form id="loginForm" class="form-signin">
+            <h2 class="text-center" id="siin">Log in</h2>
+            <input type="text" id="exampleInputEmail1" placeholder="username"
+                   required name="username" class="form-control">
+            <input type="password" id="exampleInputPassword1"
+                   placeholder="password" required name="password" class="form-control">
+            <button type="submit" class="btn btn-lg btn-primary btn-block">login</button>
+            <div class="clearfix">
+                <p class="pull-left">Username:smit <br> Password:SeeOnSalajane!</p>
+            </div>
+        </form>
+    </div>
+
+
+        <script src="https://code.jquery.com/jquery-2.2.2.js" integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE="
+                crossorigin="anonymous"></script>
+        <script src="js/client.js"></script>
+
+</body>
+</html>
